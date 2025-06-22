@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AntdUI" Version="2.0.6" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.11.0.20250507" />
+    <PackageReference Include="PaddleOCRSharp" Version="5.0.0.1" />
+    <PackageReference Include="Sdcb.OpenVINO" Version="0.6.10" />
+    <PackageReference Include="Sdcb.OpenVINO.PaddleOCR" Version="0.6.8" />
+    <PackageReference Include="Sdcb.OpenVINO.PaddleOCR.Models.Online" Version="0.6.2" />
+    <PackageReference Include="Sdcb.OpenVINO.runtime.win-x64" Version="2025.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Paddle.Runtime.win_x64" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>
