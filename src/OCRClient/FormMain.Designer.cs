@@ -39,35 +39,36 @@
             pageHeader1.Location = new Point(0, 0);
             pageHeader1.Name = "pageHeader1";
             pageHeader1.ShowButton = true;
-            pageHeader1.Size = new Size(900, 40);
+            pageHeader1.Size = new Size(900, 45);
             pageHeader1.TabIndex = 0;
             pageHeader1.Text = "OCR Client";
             // 
             // uploadDragger1
             // 
             uploadDragger1.Dock = DockStyle.Top;
-            uploadDragger1.Location = new Point(0, 40);
+            uploadDragger1.Location = new Point(0, 45);
             uploadDragger1.Name = "uploadDragger1";
-            uploadDragger1.Size = new Size(900, 161);
+            uploadDragger1.Size = new Size(900, 182);
             uploadDragger1.TabIndex = 1;
             uploadDragger1.Text = "点击或拖拽上传图片文件";
             uploadDragger1.DragChanged += uploadDragger1_DragChanged;
             // 
             // txtOutput
             // 
+            txtOutput.AutoScroll = true;
             txtOutput.Dock = DockStyle.Fill;
-            txtOutput.Location = new Point(0, 201);
+            txtOutput.Location = new Point(0, 227);
             txtOutput.Multiline = true;
             txtOutput.Name = "txtOutput";
             txtOutput.ReadOnly = true;
-            txtOutput.Size = new Size(900, 399);
+            txtOutput.Size = new Size(900, 448);
             txtOutput.TabIndex = 2;
             // 
             // FormMain
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(900, 600);
+            ClientSize = new Size(900, 675);
             Controls.Add(txtOutput);
             Controls.Add(uploadDragger1);
             Controls.Add(pageHeader1);

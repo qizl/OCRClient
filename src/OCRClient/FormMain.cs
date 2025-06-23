@@ -15,6 +15,16 @@ namespace OCRClient
             this.uploadDragger1.Filter = "Í¼Æ¬ÎÄ¼þ|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
         }
 
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            //if (Keys.Escape == keyData)
+            //{
+            //    this.Close();
+            //}
+
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
         private void uploadDragger1_DragChanged(object sender, AntdUI.StringsEventArgs e)
         {
             var filePath = e.Value.FirstOrDefault();
@@ -43,7 +53,6 @@ namespace OCRClient
             {
                 AllowRotateDetection = true,
                 Enable180Classification = true,
-
             };
 
             PaddleOcrResult result = all.Run(src);
